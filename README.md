@@ -5,6 +5,7 @@
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB)
 ![Dependencies](https://img.shields.io/badge/pip%20install-0%20个依赖-2E7D32)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
+![spec](https://img.shields.io/badge/agentskills.io-spec%20valid-2E7D32)
 
 ## 为什么法律资料要单独一套流程
 
@@ -23,6 +24,18 @@
 1. **判版本时效**——先确认手上是哪一版，有没有更新的修正案。判"最新"只认立法机关动态与主席令，**不用转载全文倒推**（转载站常滞后半年）。
 2. **脚本提取编章结构**——编 / 章 / 节 / 条的位置不靠肉眼数，用 `scripts/law_helper.py` 从 PDF 文本抽，避免手抄错层。
 3. **逐条核对留痕**——每条引文都要能指回原文位置；找不到出处的标「原文未提供」，不猜、不补。
+
+## 用插件安装（一条命令，已实测）
+
+```bash
+claude plugin marketplace add zhanguoliang715/law-text-ingest
+claude plugin install law-text-ingest@law-text-ingest
+```
+
+> 本机 git 若报 `CRYPT_E_NO_REVOCATION_CHECK`（证书吊销列表查不到），命令前加 `GIT_SSL_NO_VERIFY=1`。
+> 这是本机 TLS 配置问题，与仓库无关；换台机器通常直接可用。
+
+不想装插件也行，下面的手动方式是等价的。
 
 ## 上手
 
