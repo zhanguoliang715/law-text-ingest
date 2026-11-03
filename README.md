@@ -1,5 +1,8 @@
 # law-text-ingest
 
+<p align="right">[简体中文](README.md) | [English](README.en.md)</p>
+
+
 **把法律 PDF 收进知识库，保证条号不错、版本不旧。法律资料和普通文章的要求不一样：条文原文就是唯一标准答案，条号错一位整篇作废。**
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB)
