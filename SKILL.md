@@ -1,11 +1,12 @@
 ---
 name: law-text-ingest
 description: "将法律 PDF（法典、法律、修正案、司法解释）摄入 Obsidian 知识库。内置时效性核查、原文目录脚本提取编章结构、逐条回原文自检流程。适用于用户提供法律文本 PDF 要求收录、判断版本新旧、或要求按编/章深度拆解法律体系的场景。"
-description_zh: "法律 PDF 入库：版本时效核查、编章结构脚本提取、逐条原文核对自检"
-description_en: "Ingest law PDFs into an Obsidian wiki: currency checks, script-extracted structure, verbatim self-verification"
-version: 1.0.0
-allowed-tools: Read, Write, Edit, Bash, Glob, Grep, WebSearch, AskUserQuestion
+license: MIT
+allowed-tools: Read Write Edit Bash Glob Grep WebSearch AskUserQuestion
 metadata:
+  version: "1.0.0"
+  description_zh: "法律 PDF 入库：版本时效核查、编章结构脚本提取、逐条原文核对自检"
+  description_en: "Ingest law PDFs into an Obsidian wiki: currency checks, script-extracted structure, verbatim self-verification"
   clawdbot:
     emoji: "\U0001F3DB\uFE0F"
     requires:

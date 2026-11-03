@@ -1,0 +1,21 @@
+{
+  "name": "law-text-ingest",
+  "owner": {
+    "name": "zhanguoliang715"
+  },
+  "metadata": {
+    "description": "法律 PDF 入库：版本时效核查、脚本提取编章结构、逐条回原文核对",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "law-text-ingest",
+      "description": "把法律 PDF 收进知识库，保证条号不错、版本不旧",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
+    }
+  ]
+}
