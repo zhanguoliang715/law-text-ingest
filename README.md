@@ -25,17 +25,39 @@
 2. **脚本提取编章结构**——编 / 章 / 节 / 条的位置不靠肉眼数，用 `scripts/law_helper.py` 从 PDF 文本抽，避免手抄错层。
 3. **逐条核对留痕**——每条引文都要能指回原文位置；找不到出处的标「原文未提供」，不猜、不补。
 
-## 用插件安装（一条命令，已实测）
+## 安装（三种方式，按推荐顺序）
+
+### 1. 一条命令装进所有 Agent（推荐，已实测）
+
+```bash
+npx skills add zhanguoliang715/law-text-ingest
+```
+
+装好后会同时挂到 Codex、Cursor、Amp、Antigravity、Claude Code 等 20+ 个 Agent 上，不用逐个配。
+
+### 2. 作为 Claude Code 插件（已实测）
 
 ```bash
 claude plugin marketplace add zhanguoliang715/law-text-ingest
 claude plugin install law-text-ingest@law-text-ingest
 ```
 
-> 本机 git 若报 `CRYPT_E_NO_REVOCATION_CHECK`（证书吊销列表查不到），命令前加 `GIT_SSL_NO_VERIFY=1`。
-> 这是本机 TLS 配置问题，与仓库无关；换台机器通常直接可用。
+### 3. 手动拷目录
 
-不想装插件也行，下面的手动方式是等价的。
+```bash
+git clone https://github.com/zhanguoliang715/law-text-ingest.git
+```
+
+> **本机 git 报 `CRYPT_E_NO_REVOCATION_CHECK` 时**（证书吊销列表查不到），在命令前加 `GIT_SSL_NO_VERIFY=1`。
+> 这是本机 TLS 配置问题，与仓库无关，换台机器通常直接可用。
+
+## English
+
+Ingest Chinese law PDFs into a wiki without breaking article numbering or version currency. Script-extracted structure plus article-by-article verification.
+
+```bash
+npx skills add zhanguoliang715/law-text-ingest
+```
 
 ## 上手
 
